@@ -60,7 +60,8 @@ b = 654
 c = a + b
 
 # Try printing the value of c below to see the answer - of course on the 
-# LEDs with a yellow background!
+# LEDs with a yellow background! It will not work! Be careful: show_message will only accept text. Therefore, numbers have to be converted to string outside of the show_message command. We will come back in step 7.
+
 # Start!
 
 
@@ -97,7 +98,7 @@ message = greeting + name
 # 7. We can convert numbers to strings like this. I'm sorry, 
 # you can't mix numbers and strings.
 
-# print(name + ''s load' + ' is ' + str(weight) + ' kg heavy')
+# print(name + '`s load' + ' is ' + str(weight) + ' kg heavy')
 
 # Start!
 
@@ -128,7 +129,7 @@ max_weight = 500
 skrew_weight = 240
 nut_weight = 200
 
-total_weight = skrew_weight + nuts_weight
+total_weight = skrew_weight + nut_weight
 can_afford_both = max_weight > total_weight
 
 if can_afford_both:   # is a true value
@@ -151,7 +152,7 @@ else:
 
 tire_weight = 25
 count = 3	
-tires_weight = count * tire
+tires_weight = count * tire_weight
 
 total_weight = total_weight + tires_weight
 
@@ -216,7 +217,7 @@ for item in my_items:
     print(item)
 '''
 
-# Add two additional itens to this list
+# Add two additional items to this list
 
 # Remember the difference between append and extend. You can use either.
 
@@ -250,7 +251,7 @@ weight_items = {
 
 # Start!
 
-# Note that 250 was entered in to the dictionary as a integer
+# Note that 250 was entered in to the dictionary as an integer
 # Try changing skew weight to a new amount
 
 # weight_items['skrew'] = 140
@@ -260,7 +261,7 @@ weight_items = {
 
 # Delete nut from the dictionary
 
-# print('nut' in addresses)  # [True]
+# print('nut' in weight_items # [True]
 # del weight_items['nut']
 # print('nut' in weight_items)  # [False]
 
@@ -276,7 +277,7 @@ for item in weight_items:
 
 
 # === NEXT ===
-# 13. Sometimes we need a endless loop 
+# 13. Sometimes we need an endless loop 
 
 # Below is a multi-line comment
 # Delete the '''from before and after to uncomment the block
@@ -305,6 +306,6 @@ while i < 6:
 def good_work(bot):
     sense.show_message("Good work, " + bot + "!")
 
-good_work('Sbot')
+# good_work('Sbot')
 
 # Start!

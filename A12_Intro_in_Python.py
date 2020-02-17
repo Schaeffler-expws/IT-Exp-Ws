@@ -151,7 +151,7 @@ else:
 # This means 'greater than or equal to'
 
 tire_weight = 25
-count = 3	
+count = 3   
 tires_weight = count * tire_weight
 
 total_weight = total_weight + tires_weight
@@ -268,6 +268,7 @@ weight_items = {
 # Start!
 
 # You can also loop over a dictionary and access its contents:
+
 '''
 for item in weight_items:
     print(item, weight_items[item])
